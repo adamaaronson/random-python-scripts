@@ -69,7 +69,7 @@ def submatch(pat, word):
 wordlist = input('Input wordlist filepath: ')
 
 words = open(wordlist).read().splitlines()
-words = [w[(w.index(' ') + 1)::] for w in words]
+words = [w[(w.index(' ') + 1)::] if ' ' in w else w for w in words]
 
 pattern = input('Input pattern: ')
 
