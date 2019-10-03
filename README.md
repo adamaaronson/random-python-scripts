@@ -28,8 +28,12 @@ I've found this script very useful for crossword construction and anything that 
 
 Homomorses are pairs or sets of words with the same configuration of dots and dashes, or mits (Morse digits), ignoring spaces. `Homomorse.py` finds every set of homomorses in the English dictionary text file, `enable1.txt`.
 
-The homomorse set with the most mits turns out to be `biologically` and `theologically`, both of which have the following mit configuration: `-.....---.-..-----...-.-..-.-...-..-.--`
+The homomorse set with the most mits turns out to be the words with the mit configuration `-.....---.-..-----...-.-..-.-...-..-.--`, which includes:
 
-The largest set of homomorse turns out to be the words with the mit configuration `-....--....`, which includes: `babe, bans, bates, bath, begs, deans, death, digs, dimes, duns, neeps, nips, tsadi`
+`biologically, theologically`
+
+The largest set of homomorse turns out to be the words with the mit configuration `-....--....`, which includes:
+
+`babe, bans, bates, bath, begs, deans, death, digs, dimes, duns, neeps, nips, tsadi`
 
 Run the script to see the entire collection of English homomorses.
