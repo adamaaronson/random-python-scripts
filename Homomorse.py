@@ -1,4 +1,4 @@
-morse = {'a': '.-',
+MORSE = {'a': '.-',
          'b': '-...',
          'c': '-.-.',
          'd': '-..',
@@ -32,7 +32,7 @@ def makemorse(word):
     morseword = ''
     word = [l for l in word.lower() if l in 'abcdefghijklmnopqrstuvwxyz'];
     for l in word:
-        morseword = morseword + morse[l]
+        morseword = morseword + MORSE[l]
     return morseword
 
 
