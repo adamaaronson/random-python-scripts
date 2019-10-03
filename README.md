@@ -1,6 +1,6 @@
 # python-scripts
 
-This is a repository where of random Python scripts I've made.
+This is a repository of random Python scripts I've made.
 
 ## WordList OneLook
 
