@@ -62,4 +62,8 @@ homomorse = homomorse(words)
 
 hmstrings = [m + '   ' + ', '.join(homomorse[m]) for m in homomorse.keys()]
 
+# sort by Morse length
 print('\n'.join(sorted(hmstrings, key=mits, reverse=True)))
+
+# sort by set size
+#print('\n'.join(sorted(hmstrings, key=mits, reverse=True)))
