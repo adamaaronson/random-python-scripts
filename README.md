@@ -32,7 +32,7 @@ The homomorse set with the most mits turns out to be the words with the mit conf
 
 `biologically, theologically`
 
-The largest set of homomorse turns out to be the words with the mit configuration `-....--....`, which includes:
+The largest homomorse set turns out to be the words with the mit configuration `-....--....`, which includes:
 
 `babe, bans, bates, bath, begs, deans, death, digs, dimes, duns, neeps, nips, tsadi`
 
