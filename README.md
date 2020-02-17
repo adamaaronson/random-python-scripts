@@ -37,6 +37,15 @@ The largest homomorse set turns out to be the words with the mit configuration `
 
 Run the script to see the entire collection of English homomorses.
 
+## LetterBoxed
+
+`LetterBoxed.py` is a solver for Sam Ezersky's online puzzle [Letter Boxed](https://www.nytimes.com/puzzles/letter-boxed).
+The rules of the puzzle can be seen [here](https://i.imgur.com/41apwQx.png). This script takes one command line argument,
+namely a twelve-letter string consisting of each side of the Letter Boxed square. The order of sides or letters within a
+side doesn't matter, as long as letters within a side are consecutive in the input. The script outputs every possible
+two-word solution using the `enable1.txt` word list. This word list may vary from the one Sam uses, but it should still
+output one or more valid solutions whenever possible.
+
 ## WordList OneLook
 
 `WordListOneLook.py` takes in a wordlist text file and a pattern of letters, and it outputs every word in the wordlist
