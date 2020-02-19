@@ -51,7 +51,7 @@ output one or more valid solutions whenever possible.
 ## WordList OneLook
 
 `WordListOneLook.py` takes in two command line arguments, a wordlist text file and a pattern of letters, and outputs every word in the wordlist
-that matches the given pattern. Patterns are case-insensitive and take on the style of [onelook.com](onelook.com)
+that matches the given pattern. Patterns are case-insensitive and take on the style of [OneLook](https://onelook.com)
 searches, where the `?` character indicates one wildcard character and the `*` character indicates a string of any
 number (including zero) of wildcard characters. In addition, the `#` character indicates any consonant (including Y)
 and the `@` character indicates any vowel (excluding Y).
