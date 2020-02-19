@@ -1,3 +1,5 @@
+import sys
+
 def patternmatch(pat, word):
     pat = pat.upper()
     word = word.upper()
@@ -66,17 +68,31 @@ def submatch(pat, word):
     return submatch(pat[1::], word[1::])
 
 
-wordlist = input('Input wordlist filepath: ')
+def onelook(args):
+    if len(args) != 3:
+        return 'Error: input wordlist filepath, followed by a space and then your search query.'
 
-words = open(wordlist).read().splitlines()
-words = [w[(w.index(' ') + 1)::] if ' ' in w else w for w in words]
+    wordlist = args[1]
+    pattern = args[2]
 
-pattern = input('Input pattern: ')
+    words = []
 
-i_have_no_words = True
-for w in words:
-    if patternmatch(pattern, w):
-        i_have_no_words = False
-        print(w)
-if i_have_no_words:
-    print('I have no words...')
+    try:
+        words = open(wordlist).read().splitlines()
+        words = [w[(w.index(' ') + 1)::] if ' ' in w else w for w in words]
+    except IOError:
+        return 'Error: file not found'
+
+    results = []
+
+    for w in words:
+        if patternmatch(pattern, w):
+            results.append(w)
+
+    if len(results) == 0:
+        return 'I have no words...'
+    else:
+        return 'I found {} results:\n'.format(len(results)) + '\n'.join(results)
+
+
+print(onelook(sys.argv))
