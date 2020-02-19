@@ -50,25 +50,31 @@ output one or more valid solutions whenever possible.
 
 ## WordList OneLook
 
-`WordListOneLook.py` takes in a wordlist text file and a pattern of letters, and it outputs every word in the wordlist
+`WordListOneLook.py` takes in two command line arguments, a wordlist text file and a pattern of letters, and outputs every word in the wordlist
 that matches the given pattern. Patterns are case-insensitive and take on the style of [onelook.com](onelook.com)
 searches, where the `?` character indicates one wildcard character and the `*` character indicates a string of any
-number (including zero) of wildcard characters. For example, the input `P??T*T*` indicates words with the first letter
+number (including zero) of wildcard characters. In addition, the `#` character indicates any consonant (including Y)
+and the `@` character indicates any vowel (excluding Y).
+
+For example, the input `P??T*T*` indicates words with the first letter
 P, fourth letter T, and a T anywhere after the fourth letter. With my wordlist, the output looks like this:
 ```
-Input wordlist filepath: WordList.txt
-Input pattern: P??T*T*
+I found 17 results:
 PARTEDTHEREDSEA
 PARTYROCKANTHEM
 POETRYANTHOLOGY
 PARTSTHEREDSEA
 PARTTHEREDSEA
+POTTYTRAINING
 POETLAUREATE
 PORTAPOTTIES
+POTTYTRAINED
+POTTYTRAINS
 PENTATONIX
 PLOTTWISTS
 PORTAPOTTY
 POTTYMOUTH
+POTTYTRAIN
 PRETTYSURE
 PLOTTWIST
 ```

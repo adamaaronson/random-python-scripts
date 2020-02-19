@@ -60,7 +60,7 @@ def submatch(pat, word):
     if pat[0].isalpha() and pat[0] != word[0]:
         return False
     # check consonants
-    if pat[0] == '$' and word[0].upper() not in 'BCDFGHJKLMNPQRSTVWXYZ':
+    if pat[0] == '#' and word[0].upper() not in 'BCDFGHJKLMNPQRSTVWXYZ':
         return False
     # check vowels
     if pat[0] == '@' and word[0].upper() not in 'AEIOU':
