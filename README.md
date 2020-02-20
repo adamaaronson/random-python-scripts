@@ -53,8 +53,7 @@ output one or more valid solutions whenever possible.
 `WordListOneLook.py` takes in two command line arguments, a wordlist text file and a pattern of letters, and outputs every word in the wordlist
 that matches the given pattern. Patterns are case-insensitive and take on the style of [OneLook](https://onelook.com)
 searches, where the `?` character indicates one wildcard character and the `*` character indicates a string of any
-number (including zero) of wildcard characters. In addition, the `#` character indicates any consonant (including Y)
-and the `@` character indicates any vowel (excluding Y).
+number (including zero) of wildcard characters.
 
 For example, the input `P??T*T*` indicates words with the first letter
 P, fourth letter T, and a T anywhere after the fourth letter. With my wordlist, the output looks like this:
