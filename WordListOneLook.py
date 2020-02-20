@@ -59,12 +59,6 @@ def submatch(pat, word):
     # process wildcards
     if pat[0].isalpha() and pat[0] != word[0]:
         return False
-    # check consonants
-    if pat[0] == '#' and word[0].upper() not in 'BCDFGHJKLMNPQRSTVWXYZ':
-        return False
-    # check vowels
-    if pat[0] == '@' and word[0].upper() not in 'AEIOU':
-        return False
     return submatch(pat[1::], word[1::])
 
 
